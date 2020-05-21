@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <Button
+        android:id="@+id/termHigh"
+        android:layout_width="96dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="24dp"
+        android:text="Выбрать след. тему"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Input"
+        android:layout_width="339dp"
+        android:layout_height="365dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Feeld"
+            android:layout_width="match_parent"
+            android:layout_height="365dp"
+            android:hint="Введите текст для новости" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="162dp"
+        android:text="Домой"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/termLess"
+        android:layout_width="96dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="76dp"
+        android:text="Выбрать пред. тему"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input" />
+
+    <TextView
+        android:id="@+id/itog"
+        android:layout_width="219dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="87dp"
+        android:text="Выбранная тема: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input" />
+
+    <Button
+        android:id="@+id/agree"
+        android:layout_width="133dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Подтвердить"
+        app:layout_constraintBottom_toTopOf="@+id/Home"
+        app:layout_constraintEnd_toStartOf="@+id/termHigh"
+        app:layout_constraintStart_toEndOf="@+id/termLess" />
+</androidx.constraintlayout.widget.ConstraintLayout>
